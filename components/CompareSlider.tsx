@@ -6,6 +6,7 @@ import {
 export const CompareSlider = ({
   original,
   restored,
+  
 }: {
   original: string;
   restored: string;
