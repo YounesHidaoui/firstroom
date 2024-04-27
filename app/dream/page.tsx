@@ -87,8 +87,10 @@ export default function DreamPage() {
       },
       body: JSON.stringify({ imageUrl: fileUrl, theme, room }),
     });
-
+    console.log(res);
     let newPhoto = await res.json();
+    
+    
     if (res.status !== 200) {
       setError(newPhoto);
     } else {
